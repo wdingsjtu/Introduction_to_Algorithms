@@ -3,7 +3,7 @@
 
 from __future__ import print_function
 import random
-from sorting import quick_sort
+from sorting import heap_sort as mysort
 
 
 n = 10
@@ -14,7 +14,7 @@ print(rand_int_list, '\n')
 print("StandarD results:")
 print(sorted(rand_int_list), '\n')
 
-quick_sort(rand_int_list)
+mysort(rand_int_list)
 print("Sorted by my implementation:")
 print(rand_int_list, '\n')
 
