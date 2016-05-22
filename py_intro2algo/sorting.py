@@ -38,8 +38,8 @@ def build_max_heap(aList):
     nodes start from (n+1)/2 - 1, i.e., (n-1)/2.
     
     '''
-    iFirstLeaf = (len(aList) - 1)//2
-    for i in reversed(range(iFirstLeaf)):
+    iFirstLeaf = len(aList)//2
+    for i in reversed(range(iFirstLeaf + 1)):
         max_heapify(aList, i)
 
 def heap_sort(aList):

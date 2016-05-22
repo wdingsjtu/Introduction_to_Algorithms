@@ -1,12 +1,6 @@
 /*--***************************************************************************
-Chapter 6: Heap Sorting
-    heap_sort
-      max_heapify
-      build_max_heap
 
-Chapter 7: Quick Sorting (p.95)
-    quick_sort
-      partition
+See in "sorting.h" for notations. 
 
 //TODO int -> template
 
