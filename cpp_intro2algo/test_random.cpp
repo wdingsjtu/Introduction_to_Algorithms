@@ -8,7 +8,25 @@
 #include <iostream>
 #include "sorting.h"
 
+void mysort(int*, int, int);
 void print_list(int* aList, int lenOfList);
+
+
+void mysort(int* aList, int start, int end){
+//    quick_sort(aList, start, end);
+    heap_sort(aList, start, end);
+}
+
+void print_list(int* aList, int lenOfList){
+
+    const int last = lenOfList - 1;
+
+    std::cout << "[";
+    for (int i=0; i<last; i++){
+        std::cout << aList[i] << ", ";
+    }
+    std::cout << aList[last] << "]\n";
+}
 
 int main(){
 
@@ -31,7 +49,7 @@ int main(){
     std::cout << "\n";
 
     std::cout << "Sorted by my implementation:" << "\n";    
-    quick_sort(rand_list, 0, len_list - 1);
+    mysort(rand_list, 0, len_list - 1);
     print_list(rand_list, len_list);
     std::cout << "\n";    
 
@@ -45,15 +63,4 @@ int main(){
     std::cout << std::boolalpha << is_identical << "\n";
 
     return 0;
-}
-
-void print_list(int* aList, int lenOfList){
-
-    const int last = lenOfList - 1;
-
-    std::cout << "[";
-    for (int i=0; i<last; i++){
-        std::cout << aList[i] << ", ";
-    }
-    std::cout << aList[last] << "]\n";
 }

@@ -1,10 +1,8 @@
 '''
 Basic Structures:
     BinaryTree (p.690)
-
 Chapter 12: Binary Search Tree (p.161)
     ... 
-
 '''
 from __future__ import print_function
 
